@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drawing App 🎨</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Include the JavaScript file and defer its execution -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Canvas element for drawing -->
+    <canvas id="canvas"></canvas>
+    
+    <!-- Navigation bar -->
+    <div class="nav">
+        <!-- Color selection circles with data attributes -->
+        <div class="clr" data-clr="#000"></div>
+        <div class="clr" data-clr="#FF0000"></div>
+        <div class="clr" data-clr="#FFA500"></div>
+        <div class="clr" data-clr="#0000FF"></div>
+        <div class="clr" data-clr="#800080"></div>
+        <div class="clr" data-clr="#008000"></div>
+        <div class="clr" data-clr="#FFFF00"></div>
+        <div class="clr" data-clr="#FFFFFF"></div>
+
+        <!-- Clear and Save buttons -->
+        <button class="clear">Clear</button>
+        <button class="save">Save</button>
+        
+        <!-- Color input and line width input range -->
+        <label for="favcolor" id="label_favclr">Select page color:</label>
+        <input type="color" value="#C0C0C0" id="favcolor" >
+        <input type="range" name="ageInputName" id="ageInputId" value="5" min="1" max="10" oninput="ageOutpuId.value = ageInputId.value">
+        <output id="ageOutpuId">5</output>
+
+        <!-- Emoji for decoration -->
+        <div class="emoji">🎨</div>
+    </div>
+</body>
+</html>

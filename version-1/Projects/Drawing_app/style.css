@@ -1,0 +1,132 @@
+/* Reset default margin, padding, and hide overflow */
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the navigation bar */
+.nav {
+    width: auto;
+    height: 50px;
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity .5s;
+    background: linear-gradient(to right, #020024 0%, #090979 35%, #00d4ff 100%);
+    padding: 10px;
+    border-radius: 15px;
+    border: 3px solid white;
+}
+
+/* Apply styles to divs, buttons, and inputs inside the navigation bar */
+.nav div, button, input {
+    margin: 5px;
+}
+
+/* Add hover effect to the navigation bar */
+.nav:hover {
+    cursor: pointer;
+}
+
+/* Style for buttons */
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 9px 15px;
+    background-color: green;
+    color: white;
+    border: 3px solid white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Style for color selection circles */
+.clr {
+    height: 35px;
+    width: 35px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: .5s;
+}
+
+/* Add hover effect to color selection circles */
+.clr:hover {
+    transform: scale(1.2);
+}
+
+/* Define colors for specific color circles */
+.clr:nth-child(1){
+    background-color: black;
+}
+.clr:nth-child(2){
+    background-color: red;
+}
+.clr:nth-child(3){
+    background-color: orange;
+}
+.clr:nth-child(4){
+    background-color: blue;
+}
+.clr:nth-child(5){
+    background-color: purple;
+}
+.clr:nth-child(6){
+    background-color: green;
+}
+.clr:nth-child(7){
+    background-color: yellow;
+}
+.clr:nth-child(8){
+    background-color: white;
+}
+
+/* Style for the "Save" button */
+.save {
+    background-color: blue;
+}
+
+/* Style for the color input */
+input[type="color"] {
+    width: 70px;
+    height: 40px;
+    background-color: seashell;
+    border-radius: 7px;
+    padding: 4px;
+}
+
+/* Style for the output element displaying the line width */
+#ageOutputId {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Style for the line width input range */
+#ageInputId {
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+    height: 7px;
+    outline: none;
+    -webkit-appearance: none;
+    cursor: col-resize;
+    border-radius: 5px;
+    border: 3px solid white;
+    accent-color: white;
+}
+label {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+}
+/* Style for the emoji */
+.emoji {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
