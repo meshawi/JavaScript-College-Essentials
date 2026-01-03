@@ -2,12 +2,6 @@
 .gitignore
 README.md
 *.md
-*.docx
-*.doc
-Report.docx
 .DS_Store
 .vscode
 *.log
-Dockerfile
-nginx.conf
-.dockerignore
